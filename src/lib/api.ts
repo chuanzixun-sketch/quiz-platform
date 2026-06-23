@@ -15,7 +15,7 @@ export function clearToken() {
 
 export async function apiFetch<T = any>(
   path: string,
-  options?: RequestInit & { body?: any }
+  options?: Omit<RequestInit, 'body'> & { body?: unknown }
 ): Promise<{ data?: T; error?: string }> {
   try {
     const token = getToken();
