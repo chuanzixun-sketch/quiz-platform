@@ -5,7 +5,6 @@ import { useAuth } from '@/lib/auth';
 import {
   LayoutDashboard,
   Library,
-  ClipboardList,
   AlertCircle,
   Star,
   BarChart3,
