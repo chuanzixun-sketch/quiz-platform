@@ -31,7 +31,7 @@ export default function RegisterPage() {
     }
 
     setLoading(true);
-    const { error: signUpError, data } = await signUp(email, password);
+    const { error: signUpError } = await signUp(email, password);
     if (signUpError) {
       setError(signUpError);
       setLoading(false);

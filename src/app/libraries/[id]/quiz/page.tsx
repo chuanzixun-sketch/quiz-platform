@@ -6,7 +6,7 @@ import Link from 'next/link';
 import { useAuth } from '@/lib/auth';
 import { apiFetch } from '@/lib/api';
 import { Question, Library, QuizMode } from '@/types';
-import { ArrowLeft, Check, X, ChevronLeft, ChevronRight, Send, RotateCcw, Sparkles, Clock } from 'lucide-react';
+import { ArrowLeft, Check, X, ChevronLeft, ChevronRight, Send, RotateCcw, Clock } from 'lucide-react';
 
 export default function QuizPage() {
   const router = useRouter();

@@ -6,7 +6,7 @@ import Link from 'next/link';
 import { useAuth } from '@/lib/auth';
 import { apiFetch } from '@/lib/api';
 import { WrongQuestion, Question } from '@/types';
-import { AlertCircle, BookOpen, Check, RotateCcw, ExternalLink } from 'lucide-react';
+import { AlertCircle, BookOpen, Check } from 'lucide-react';
 
 export default function WrongQuestionsPage() {
   const router = useRouter();
