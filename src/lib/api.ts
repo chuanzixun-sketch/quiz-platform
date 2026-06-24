@@ -1,4 +1,4 @@
-const API_BASE = process.env.NEXT_PUBLIC_APP_URL || 'http://localhost:3000';
+const API_BASE = '';
 
 export function getToken(): string | null {
   if (typeof window === 'undefined') return null;
@@ -27,7 +27,7 @@ export async function apiFetch<T = any>(
       headers['Authorization'] = `Bearer ${token}`;
     }
 
-    const res = await fetch(`${API_BASE}${path}`, {
+    const res = await fetch(path, {
       ...options,
       headers,
       body: options?.body ? JSON.stringify(options.body) : undefined,
